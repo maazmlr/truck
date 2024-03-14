@@ -1,0 +1,95 @@
+*{
+  font-size: 16px;
+  margin: 0;
+}
+body{
+  min-height: 100svh;
+  max-width: 100svw;
+  background: #fff;
+
+}
+.link-home{
+  font-size: 1rem;
+  font-weight: 700;
+}
+.footer-title{
+  font-size: 2rem;
+  margin-bottom: 1rem !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+h4{
+  opacity: 1 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  *{
+    font-size: 8px;
+  }
+}
+#submitButton.clicked {
+  transform: scale(0.95);
+  transition: transform 0.1s ease-in-out;
+}
+p{
+  color: black;
+}
+h1{
+  color: #fff;
+}
+.link-hover{
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  color: #fff;
+}
+.link-home{
+  font-size: 1.3rem;
+  color: white;
+  
+}
+.link-home:hover,.link-home:focus{
+  background-color: #dcb96c  !important;
+}
+.label-text{
+  color: black !important;
+  font-weight: 800;
+}
+
+.animated-text {
+  animation: slideFromLeft 1s ease-out forwards;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1280px) {
+      *{
+          font-size: 22px;
+      }
+      
+  }
+@media screen and (min-width: 1920px) {
+      *{
+          font-size: 28px;
+      }
+
+  }
+  
+.menu{
+  min-width: 10rem;
+}
+.animated-text {
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 1s ease; /* Smooth transition for opacity */
+}
+
+.animated-text.animate {
+  opacity: 1; /* Show the text with animation */
+}
